@@ -1,0 +1,20 @@
+﻿using BTLWebCB_HaiNam.Modules;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace BTLWebCB_HaiNam
+{
+    public partial class Customer : System.Web.UI.MasterPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<Cart> giohang = Session["cartItem"] as List<Cart>;
+            soluongsanpham.Text = giohang.Count.ToString();
+        }
+
+    }
+}

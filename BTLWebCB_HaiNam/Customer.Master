@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="BTLWebCB_HaiNam.Customer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Bài tập lớn web cơ bản</title>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="trangchu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .ml-2{
+            margin-left:16px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="header">
+                <div class="giohang">
+                    <a href="Giohang.aspx"><i class="fas fa-shopping-cart coloricon"></i></a>
+                    <a href="Dangnhap.aspx"><i class="fas fa-user coloricon ml-2"></i></a>
+                    <p>Sản phẩm: <span id="number">
+                        <asp:Literal ID="soluongsanpham" runat="server"></asp:Literal></span></p>
+                </div>
+                <div class="logo-website">
+                    <img src="image/logo.png" class="logo" />
+                </div>
+                <div class="search">
+                    <form method="GET" action="#">
+                        <a href="#"><i class="fas fa-search coloricon"></i></a>
+                        <input class="search_box" type="text" placeholder="từ khóa" />
+                        <!--<input class="btn_search" type="button" value="Search"/>-->
+                    </form>
+                </div>
+            </div>
+            <div class="border"></div>
+            <div class="nav">
+                <ul class="menu">
+                    <li><a href="Home.aspx">TRANG CHỦ</a></li>
+                    <li class="raucu"><a href="#">RAU CỦ</a>
+                        <ul class="menu-raucu">
+                            <li><a href="RauAnqua.aspx">Rau ăn quả</a></li>
+                            <li><a href="RauAncu.aspx">Rau ăn củ</a></li>
+                            <li><a href="RauAnqua.aspx">Rau ăn thân</a></li>
+                        </ul>
+                    </li>
+                    <li class="traicay"><a href="#">TRÁI CÂY</a>
+                        <ul class="menu-traicay">
+                            <li><a href="TraicayVietNam.aspx">Trái cây Việt Nam</a></li>
+                            <li><a href="TraicayNhapkhau.aspx">Trái cây nhập khẩu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Gioithieu.aspx">GIỚI THIỆU</a></li>
+                    <li><a href="Tintuc.aspx">TIN TỨC</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <asp:ContentPlaceHolder ID="BodyOutFormServer" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%-- Footer--%>
+    <div class="footer-hotline">
+        <h3>Hotline hỗ trợ : 0281469488</h3>
+    </div>
+    <div class="footer">
+        <div class="footer_logo">
+            <img src="image/logo2.png" />
+            <p>Chúng tôi tin chất lượng và dịch vụ tốt nhất</p>
+        </div>
+        <div class="footer_gioithieu">
+            <p class="ft_title">GIỚI THIỆU</p>
+            <ul class="list">
+                <li><a href="#">Hỗ trợ khách hàng</a></li>
+                <li><a href="#">Điều khoản và dịch vụ</a></li>
+                <li><a href="#">Hướng dẫn và thanh toán</a></li>
+            </ul>
+        </div>
+        <div class="footer_hotro">
+            <p class="ft_title">HỖ TRỢ KHÁCH HÀNG</p>
+            <ul class="list">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Thanh toán</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="footer_diachi">
+            <p class="ft_title">ĐỊA CHỈ</p>
+            <ul class="list">
+                <li><a href="#">Công Ty TNHH Thương Mại Dịch Vụ Đầu Tư ĐH MỞ HÀ NỘI</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i>Weba.Vn Tầng 7 Đoàn Hải Plaza, Số 96 Định Công, Hoàng Mai, Hà Nội</a></li>
+                <li><a href="#"><i class="fas fa-phone"></i>02815860563</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i>bai_tap_lon_ltrweb_2019-2020@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

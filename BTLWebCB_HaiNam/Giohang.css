@@ -1,0 +1,31 @@
+﻿.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt-5 {
+    margin-top: 40px !important;
+}
+.bg-green {
+    background-color: #88be4c !important;
+}
+.p-2 {
+    padding: 16px !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto
+}
+.imgGiohang {
+    width: 200px;
+}
+.text {
+    font-size: 20px;
+    font-weight: bold;
+}

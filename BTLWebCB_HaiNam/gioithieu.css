@@ -1,0 +1,39 @@
+.content-gioithieu{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding: 10px 10%;
+    grid-column-gap: 20px;
+    height: 500px;
+}
+.img{
+    height: 260px;
+    width: 100%;
+}
+.img img{
+    width: 100%;
+}
+.tin2_thongtin{
+    padding: 16px;
+    font-size: 20px;
+}
+.tin2_thongtin ul {
+    padding-left: 40px;
+}
+.tin2_thongtin ul li{
+    font-size: 16px;
+    padding-top:10px ;
+}
+h4{
+    color: chocolate;
+    font-size: 24px;
+    padding-bottom:10px ;
+}
+/* responsive */
+/*mobile*/
+@media only screen and (max-width:768px){
+    .content-gioithieu{
+        grid-template-columns: 12fr;
+        height: 776px;
+        
+    }
+}

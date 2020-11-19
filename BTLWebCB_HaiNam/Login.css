@@ -1,0 +1,94 @@
+﻿.page-title {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.format {
+    width: 30%;
+    margin: auto;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.txt {
+    font-size: 15px;
+}
+
+.btn {
+    background-color: #f25252;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+    .input-field:focus {
+        border: 2px solid #f25252;
+    }
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.psw {
+    font-size: 13px;
+    padding-top: 14px;
+}
+
+.mt-1 {
+    margin-top: 8px !important;
+}
+
+.mt-5 {
+    margin-top: 40px !important;
+}
+
+/* Xu ly input */
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.mt-2 {
+    margin-top: 16px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .format {
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        padding-bottom: 60px;
+        line-height: 2.5;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .txt {
+        font-size: 14px;
+    }
+
+    .psw {
+        font-size: 13px;
+        padding-top: 6px;
+    }
+}
